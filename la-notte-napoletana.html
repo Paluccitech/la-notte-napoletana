@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Confraria Palucci - La Notte Napoletana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="La Notte Napoletana da Confraria Palucci: uma noite exclusiva com a melhor pizza napoletana de Ribeirão Preto. Vagas limitadas para 28/11/2025." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* RESET E BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', Georgia, serif;
+      line-height: 1.8;
+      color: #2c2c2c;
+      background: #f9f6f1;
+      overflow-x: hidden;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #fff8f0 0%, #f9f6f1 100%);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(249, 246, 241, 0.98);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(139, 90, 43, 0.1);
+      z-index: 100;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #8b5a2b 0%, #6b4423 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff8f0;
+      font-weight: 600;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(139, 90, 43, 0.25);
+      font-family: Georgia, serif;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-weight: 600;
+      font-size: 19px;
+      color: #2c2c2c;
+      font-family: Georgia, serif;
+    }
+
+    .brand-sub {
+      font-size: 13px;
+      color: #8b5a2b;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-pill {
+      padding: 10px 18px;
+      background: rgba(139, 90, 43, 0.08);
+      border-radius: 24px;
+      font-size: 13px;
+      color: #6b4423;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(139, 90, 43, 0.15);
+    }
+
+    .nav-cta {
+      background: #8b5a2b;
+      color: #fff8f0;
+      border: none;
+      padding: 12px 26px;
+      border-radius: 24px;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+      box-shadow: 0 4px 12px rgba(139, 90, 43, 0.25);
+    }
+
+    .nav-cta:hover {
+      background: #6b4423;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(139, 90, 43, 0.3);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 60px 0 100px;
+      background: linear-gradient(180deg, #fff8f0 0%, #f9f6f1 100%);
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: transparent;
+      color: #8b5a2b;
+      padding: 0;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      border: none;
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-title {
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 28px;
+      color: #2c2c2c;
+      font-family: Georgia, serif;
+    }
+
+    .hero-title span {
+      color: #8b5a2b;
+      font-style: italic;
+    }
+
+    .hero-subtitle {
+      font-size: 19px;
+      color: #5a5a5a;
+      margin-bottom: 36px;
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .badge {
+      background: rgba(139, 90, 43, 0.08);
+      padding: 11px 20px;
+      border-radius: 24px;
+      font-size: 14px;
+      font-weight: 400;
+      border: 1px solid rgba(139, 90, 43, 0.15);
+      color: #6b4423;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 44px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: #8b5a2b;
+      color: #fff8f0;
+      border: none;
+      padding: 16px 36px;
+      border-radius: 28px;
+      font-weight: 500;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Poppins', sans-serif;
+      box-shadow: 0 6px 20px rgba(139, 90, 43, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: #6b4423;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(139, 90, 43, 0.35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #8b5a2b;
+      border: 2px solid rgba(139, 90, 43, 0.3);
+      padding: 14px 36px;
+      border-radius: 28px;
+      font-weight: 500;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-outline:hover {
+      border-color: #8b5a2b;
+      background: rgba(139, 90, 43, 0.05);
+    }
+
+    .hero-info-row {
+      display: flex;
+      gap: 36px;
+      margin-bottom: 36px;
+      padding: 26px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 16px;
+      border: 1px solid rgba(139, 90, 43, 0.12);
+    }
+
+    .hero-info-block {
+      flex: 1;
+    }
+
+    .hero-info-label {
+      font-size: 12px;
+      color: #8b5a2b;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .hero-info-value {
+      font-size: 16px;
+      font-weight: 500;
+      color: #2c2c2c;
+    }
+
+    .countdown {
+      padding: 22px;
+      background: rgba(139, 90, 43, 0.08);
+      border-radius: 16px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 17px;
+      color: #6b4423;
+      border: 1px solid rgba(139, 90, 43, 0.2);
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+      transform: rotate(1deg);
+      transition: transform 0.4s ease;
+      border: 3px solid rgba(139, 90, 43, 0.15);
+    }
+
+    .hero-card:hover {
+      transform: rotate(0deg) scale(1.01);
+    }
+
+    .hero-main-image {
+      width: 100%;
+      height: 580px;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(135deg, #e8d5c4 0%, #d4c5b0 100%);
+    }
+
+    .hero-main-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+      pointer-events: none;
+    }
+
+    .hero-main-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Fallback para imagens */
+    img {
+      background: linear-gradient(135deg, #e8d5c4 0%, #d4c5b0 100%);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 0;
+    }
+
+    .pill-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: #8b5a2b;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .pill-dot {
+      width: 6px;
+      height: 6px;
+      background: #8b5a2b;
+      border-radius: 50%;
+    }
+
+    .section-heading {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #2c2c2c;
+      font-family: Georgia, serif;
+      line-height: 1.3;
+    }
+
+    .section-sub {
+      font-size: 18px;
+      color: #5a5a5a;
+      margin-bottom: 52px;
+      max-width: 680px;
+      line-height: 1.8;
+    }
+
+    /* MENU CARDS */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 36px;
+      margin-top: 52px;
+    }
+
+    .menu-card {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
+      border: 2px solid rgba(139, 90, 43, 0.12);
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 36px rgba(139, 90, 43, 0.18);
+      border-color: rgba(139, 90, 43, 0.25);
+    }
+
+    .menu-image {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(135deg, #e8d5c4 0%, #d4c5b0 100%);
+    }
+
+    .menu-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.15) 100%);
+      pointer-events: none;
+    }
+
+    .menu-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .menu-card:hover .menu-image img {
+      transform: scale(1.08);
+    }
+
+    .menu-title {
+      padding: 28px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #2c2c2c;
+      text-align: center;
+      font-family: Georgia, serif;
+      font-style: italic;
+    }
+
+    /* BONUS GRID */
+    .bonus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 52px;
+    }
+
+    .bonus-card {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 36px;
+      border-radius: 18px;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 400;
+      color: #2c2c2c;
+      border: 2px solid rgba(139, 90, 43, 0.15);
+      transition: all 0.4s ease;
+    }
+
+    .bonus-card:hover {
+      border-color: #8b5a2b;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(139, 90, 43, 0.15);
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    /* PRICE SECTION */
+    .price-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .value-list {
+      list-style: none;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 36px;
+      border-radius: 18px;
+      border: 2px solid rgba(139, 90, 43, 0.12);
+    }
+
+    .value-list li {
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(139, 90, 43, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      color: #5a5a5a;
+    }
+
+    .value-list li:last-child {
+      border-bottom: none;
+    }
+
+    .value-list li span {
+      font-weight: 600;
+      color: #8b5a2b;
+    }
+
+    .price-card {
+      background: linear-gradient(135deg, #8b5a2b 0%, #6b4423 100%);
+      padding: 52px;
+      border-radius: 22px;
+      color: #fff8f0;
+      text-align: center;
+      box-shadow: 0 16px 48px rgba(139, 90, 43, 0.3);
+      position: sticky;
+      top: 100px;
+      border: 3px solid rgba(255, 248, 240, 0.1);
+    }
+
+    .price-main {
+      font-size: 62px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 10px;
+      font-family: Georgia, serif;
+    }
+
+    .price-main small {
+      font-size: 22px;
+      font-weight: 400;
+      opacity: 0.85;
+    }
+
+    .price-sub {
+      font-size: 17px;
+      margin-bottom: 34px;
+      opacity: 0.9;
+    }
+
+    .price-compare {
+      margin-top: 26px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(255, 248, 240, 0.2);
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    /* GUARANTEE */
+    .guarantee-card {
+      background: rgba(139, 90, 43, 0.08);
+      padding: 52px;
+      border-radius: 22px;
+      text-align: center;
+      font-size: 23px;
+      font-weight: 500;
+      color: #6b4423;
+      border: 3px solid rgba(139, 90, 43, 0.2);
+      box-shadow: 0 8px 32px rgba(139, 90, 43, 0.12);
+      line-height: 1.6;
+      font-family: Georgia, serif;
+      font-style: italic;
+    }
+
+    /* LOCATION */
+    .location-map {
+      margin-top: 36px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(139, 90, 43, 0.15);
+      border: 3px solid rgba(139, 90, 43, 0.12);
+    }
+
+    /* FOOTER CTA */
+    .footer-cta {
+      background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+      padding: 110px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer-cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, #8b5a2b 50%, transparent 100%);
+    }
+
+    .footer-cta-card {
+      text-align: center;
+      color: #fff8f0;
+    }
+
+    .footer-cta-title {
+      font-size: 44px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-family: Georgia, serif;
+      color: #fff8f0;
+    }
+
+    .footer-cta-sub {
+      font-size: 19px;
+      margin-bottom: 44px;
+      opacity: 0.85;
+      font-style: italic;
+      color: #d4c5b0;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: #0f0f0f;
+      color: #8b8b8b;
+      padding: 42px 0;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 968px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-title {
+        font-size: 42px;
+      }
+
+      .navbar-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .nav-right {
+        flex-direction: column;
+      }
+
+      .price-section {
+        grid-template-columns: 1fr;
+      }
+
+      .price-card {
+        position: static;
+      }
+
+      .section-heading {
+        font-size: 32px;
+      }
+
+      .footer-cta-title {
+        font-size: 36px;
+      }
+
+      .nav-pill {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: 32px;
+      }
+
+      .hero-subtitle {
+        font-size: 16px;
+      }
+
+      .hero-cta-row {
+        flex-direction: column;
+      }
+
+      .btn-primary,
+      .btn-outline {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero-main-image {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">CP</div>
+        <div class="brand-text">
+          <div class="brand-title">Confraria Palucci</div>
+          <div class="brand-sub">La Notte Napoletana • 28/11/2025</div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-pill">
+          <span>📍</span> Garibaldi 3380, Ribeirão Preto
+        </div>
+        <button class="nav-cta" onclick="window.open(WHATSAPP_URL, '_blank')">
+          Garantir vaga
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="eyebrow">Uma noite especial • 28 de novembro</div>
+          <h1 class="hero-title">
+            Uma noite para celebrar a <span>verdadeira pizza napoletana.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Sabe aquela sensação de estar em uma trattoria em Nápoles? É exatamente isso que estou preparando para você. Uma noite intimista, com forno aceso, massa que descansou 48 horas, mais de 10 coberturas diferentes (incluindo uma secreta), e o clima de quem está entre amigos.
+          </p>
+          <div class="hero-badges">
+            <div class="badge">🍕 Mais de 10 coberturas artesanais</div>
+            <div class="badge">🔥 Forno a 480°C</div>
+            <div class="badge">📸 Momentos capturados</div>
+          </div>
+          <div class="hero-cta-row">
+            <button class="btn-primary" onclick="window.open(WHATSAPP_URL, '_blank')">
+              <span>Quero estar nessa noite</span> <span>→</span>
+            </button>
+            <button class="btn-outline" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+              O que vamos comer
+            </button>
+          </div>
+          <div class="hero-info-row">
+            <div class="hero-info-block">
+              <div class="hero-info-label">Quando</div>
+              <div class="hero-info-value">28 de novembro, 2025 • 20h</div>
+            </div>
+            <div class="hero-info-block">
+              <div class="hero-info-label">Onde</div>
+              <div class="hero-info-value">Garibaldi 3380, Ribeirão Preto</div>
+            </div>
+          </div>
+          <div id="countdown" class="countdown">
+            Contagem regressiva carregando…
+          </div>
+        </div>
+        <!-- Imagem lateral -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-main-image">
+              <img src="Untitled-20251110-175320-6964-2x.png" alt="Marcus Palucci na Itália" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section>
+      <div class="container">
+        <div class="pill-eyebrow"><div class="pill-dot"></div> A experiência</div>
+        <h2 class="section-heading">Não é só pizza. É um ritual.</h2>
+        <p class="section-sub">
+          Vou preparar cada pizza na sua frente, no forno de pedra a 480°C. Você vai sentir o calor, ouvir o crepitar da massa, ver a mágica acontecer. É como estar na cozinha da nonna, mas com todo o respeito pela tradição napolitana.
+        </p>
+      </div>
+    </section>
+    <!-- MENU -->
+    <section id="menu">
+      <div class="container">
+        <div class="pill-eyebrow"><div class="pill-dot"></div> O que vamos comer</div>
+        <h2 class="section-heading">Mais de 10 coberturas diferentes para você experimentar</h2>
+        <p class="section-sub">
+          Cada pizza é uma nova história. Vou preparar mais de 10 coberturas ao longo da noite, incluindo uma receita secreta que nunca mostrei antes. Aqui estão algumas que você vai provar:
+        </p>
+        <div class="card-grid">
+          <article class="menu-card">
+            <div class="menu-image">
+              <img src="20250822_203428.jpg" alt="Margherita Verace">
+            </div>
+            <div class="menu-title">Margherita Verace</div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-image">
+              <img src="20250822_232545.jpg" alt="Prosciutto e Rúcula">
+            </div>
+            <div class="menu-title">Prosciutto e Rúcula</div>
+          </article>
+          <article class="menu-card">
+            <div class="menu-image">
+              <img src="20250829_225138.jpg" alt="Pizza Especial">
+            </div>
+            <div class="menu-title">Pizza Especial com Pesto</div>
+          </article>
+        </div>
+        
+        <!-- Galeria adicional de pizzas -->
+        <div style="margin-top: 60px;">
+          <p class="section-sub" style="text-align: center; max-width: 100%; margin: 0 auto 40px;">
+            E tem muito mais... Essas são só algumas das criações que você vai experimentar:
+          </p>
+          <div class="card-grid">
+            <article class="menu-card">
+              <div class="menu-image">
+                <img src="20251013_200600.jpg" alt="Pizza com Linguiça">
+              </div>
+              <div class="menu-title">Calabresa Especial</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-image">
+                <img src="20251102_200113.jpg" alt="Pizza Gourmet">
+              </div>
+              <div class="menu-title">Pizza Gourmet</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-image">
+                <img src="20250529_200527.jpg" alt="Pizza Margherita">
+              </div>
+              <div class="menu-title">Margherita Clássica</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-image">
+                <img src="20250726_155658.jpg" alt="Quattro Formaggi">
+              </div>
+              <div class="menu-title">Quattro Formaggi</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-image">
+                <img src="20250808_214501.jpg" alt="Pizza Criativa">
+              </div>
+              <div class="menu-title">Criação Especial</div>
+            </article>
+            <article class="menu-card">
+              <div class="menu-image" style="display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #8b5a2b 0%, #6b4423 100%);">
+                <div style="color: #fff8f0; font-size: 48px; font-weight: 600; font-family: Georgia, serif;">?</div>
+              </div>
+              <div class="menu-title">A Pizza Secreta</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BÔNUS -->
+    <section>
+      <div class="container">
+        <div class="pill-eyebrow"><div class="pill-dot"></div> Pequenas alegrias</div>
+        <h2 class="section-heading">Além da pizza, quero que você leve:</h2>
+        <div class="bonus-grid">
+          <div class="bonus-card">📸 Uma foto sua ao lado do forno aceso</div>
+          <div class="bonus-card">📜 A receita da massa (a que eu uso há anos)</div>
+          <div class="bonus-card">⭐ Seu nome na lista de quem faz parte da confraria</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLHA LIVRE -->
+    <section style="background: linear-gradient(135deg, #f9f6f1 0%, #fff8f0 100%); padding: 80px 0;">
+      <div class="container" style="max-width: 900px;">
+        <div style="text-align: center; padding: 60px 40px; background: rgba(139, 90, 43, 0.06); border-radius: 24px; border: 3px solid rgba(139, 90, 43, 0.15);">
+          <div style="font-size: 64px; margin-bottom: 24px;">🍷</div>
+          <h2 class="section-heading" style="margin-bottom: 20px;">Rolha Livre</h2>
+          <p style="font-size: 20px; color: #5a5a5a; line-height: 1.8; max-width: 700px; margin: 0 auto;">
+            Traga sua bebida favorita — vinho, cerveja artesanal, o que você quiser. Nós cuidamos de <strong>tudo</strong>: taças adequadas, gelo, serviço de mesa completo. <strong>Zero cobrança de rolha</strong>, sem taxas extras. A ideia é que você se sinta em casa, mas com o conforto de ser servido.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- PREÇO -->
+    <section>
+      <div class="container price-section">
+        <div>
+          <h2 class="section-heading">O investimento</h2>
+          <ul class="value-list">
+            <li>A experiência da noite — <span>R$80</span></li>
+            <li>Sistema menu degustação — <span>R$149</span></li>
+            <li>Sua foto profissional — <span>R$35</span></li>
+            <li>Receita da massa — <span>R$299</span></li>
+          </ul>
+          <div style="margin-top: 32px; padding: 24px; background: rgba(139, 90, 43, 0.08); border-radius: 16px; border: 2px solid rgba(139, 90, 43, 0.2);">
+            <h3 style="font-size: 20px; font-weight: 600; color: #6b4423; margin-bottom: 12px; font-family: Georgia, serif;">🍷 Rolha Livre</h3>
+            <p style="color: #5a5a5a; font-size: 16px; line-height: 1.7;">
+              Você traz sua bebida favorita e nós cuidamos de tudo: taças, gelo, serviço completo. Sem cobrança de rolha, sem taxas extras. A noite é sua!
+            </p>
+          </div>
+        </div>
+        <div id="checkout" class="price-card">
+          <div class="price-main">R$ 149 <small>/ pessoa</small></div>
+          <div class="price-sub">Valor único, sem taxas escondidas</div>
+          <button class="btn-primary" style="width:100%" onclick="window.open(WHATSAPP_URL, '_blank')">
+            Quero confirmar presença
+          </button>
+          <div class="price-compare">Se fosse cobrar separadamente: R$563. Mas isso aqui é sobre dividir uma noite especial.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS E FOTOS -->
+    <section style="background: #fff;">
+      <div class="container">
+        <div class="pill-eyebrow"><div class="pill-dot"></div> Quem já veio</div>
+        <h2 class="section-heading">O que dizem sobre a Confraria Palucci</h2>
+        <p class="section-sub">
+          Não é só pizza. É sobre criar memórias, fazer amigos e viver uma experiência única.
+        </p>
+
+        <!-- Grid de Depoimentos -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; margin-top: 48px; margin-bottom: 64px;">
+          
+          <!-- Depoimento 1 - Carlos Henrique -->
+          <div style="background: rgba(255, 255, 255, 0.9); padding: 32px; border-radius: 18px; border: 2px solid rgba(139, 90, 43, 0.12); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+            <div style="display: flex; gap: 4px; margin-bottom: 16px; color: #f4b400;">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p style="font-size: 16px; color: #2c2c2c; line-height: 1.7; margin-bottom: 20px; font-style: italic;">
+              "Sensacional. Pizzas maravilhosas, muitos sabores, apresentação sem comentários. Meu sobrinho Marcão é Top. Nota 1000. 😊😊😊😊😊😊😊😊"
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #8b5a2b 0%, #6b4423 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff8f0; font-weight: 600; font-size: 18px;">
+                C
+              </div>
+              <div>
+                <div style="font-weight: 600; color: #2c2c2c;">Carlos Henrique Vieira</div>
+                <div style="font-size: 13px; color: #8b5a2b;">Google Reviews</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 2 - Allan Nicola -->
+          <div style="background: rgba(255, 255, 255, 0.9); padding: 32px; border-radius: 18px; border: 2px solid rgba(139, 90, 43, 0.12); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+            <div style="display: flex; gap: 4px; margin-bottom: 16px; color: #f4b400;">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p style="font-size: 16px; color: #2c2c2c; line-height: 1.7; margin-bottom: 20px; font-style: italic;">
+              "Melhor pizza que já comi!!"
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #8b5a2b 0%, #6b4423 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff8f0; font-weight: 600; font-size: 18px;">
+                A
+              </div>
+              <div>
+                <div style="font-weight: 600; color: #2c2c2c;">Allan Nicola</div>
+                <div style="font-size: 13px; color: #8b5a2b;">Google Reviews</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 3 - Giba Cassio -->
+          <div style="background: rgba(255, 255, 255, 0.9); padding: 32px; border-radius: 18px; border: 2px solid rgba(139, 90, 43, 0.12); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+            <div style="display: flex; gap: 4px; margin-bottom: 16px; color: #f4b400;">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p style="font-size: 16px; color: #2c2c2c; line-height: 1.7; margin-bottom: 20px; font-style: italic;">
+              "Melhor pizza de Ribeirão disparado"
+            </p>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #8b5a2b 0%, #6b4423 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff8f0; font-weight: 600; font-size: 18px;">
+                G
+              </div>
+              <div>
+                <div style="font-weight: 600; color: #2c2c2c;">Giba Cassio</div>
+                <div style="font-size: 13px; color: #8b5a2b;">Google Reviews</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Galeria de Fotos de Eventos Anteriores -->
+        <div style="margin-top: 60px;">
+          <h3 style="font-size: 32px; font-weight: 600; color: #2c2c2c; font-family: Georgia, serif; text-align: center; margin-bottom: 40px;">
+            Momentos das edições anteriores
+          </h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+            
+            <!-- Foto 1 - Brinde -->
+            <div style="border-radius: 18px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.1); border: 3px solid rgba(139, 90, 43, 0.15);">
+              <img src="evento-1.jpg" alt="Brinde na Confraria Palucci" style="width: 100%; height: 380px; object-fit: cover;">
+            </div>
+
+            <!-- Foto 2 - Grupo no Jardim -->
+            <div style="border-radius: 18px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.1); border: 3px solid rgba(139, 90, 43, 0.15);">
+              <img src="evento-2.jpg" alt="Grupo na Confraria" style="width: 100%; height: 380px; object-fit: cover;">
+            </div>
+
+            <!-- Foto 3 - Pizza -->
+            <div style="border-radius: 18px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.1); border: 3px solid rgba(139, 90, 43, 0.15);">
+              <img src="evento-3.jpg" alt="Pizza artesanal" style="width: 100%; height: 380px; object-fit: cover;">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GARANTIA -->
+    <section>
+      <div class="container">
+        <h2 class="section-heading">Minha promessa pra você</h2>
+        <div class="guarantee-card">
+          Se no final da noite você não sentir que valeu cada centavo, me fala. Eu devolvo seu dinheiro sem questionamento nenhum. Simples assim.
+        </div>
+      </div>
+    </section>
+    <!-- LOCAL -->
+    <section>
+      <div class="container">
+        <h2 class="section-heading">Onde vai acontecer</h2>
+        <p class="section-sub">
+          Na Confraria Palucci, Rua Garibaldi 3380, aqui em Ribeirão Preto. Um espaço preparado com carinho para receber você.
+        </p>
+        <div class="location-map">
+          <iframe src="https://www.google.com/maps?q=Garibaldi%203380,%20Ribeir%C3%A3o%20Preto&output=embed"
+                  width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="footer-cta">
+      <div class="container">
+        <div class="footer-cta-card">
+          <h2 class="footer-cta-title">Vamos fazer essa noite acontecer?</h2>
+          <p class="footer-cta-sub">As vagas são limitadas. Quero que seja uma noite intimista de verdade.</p>
+          <button class="btn-primary" style="width:100%;max-width:320px"
+                  onclick="window.open(WHATSAPP_URL, '_blank')">
+            Me conta que você vem
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      Feito com carinho por Marcus Palucci • Confraria Palucci<br>
+      La Notte Napoletana • 28 de novembro de 2025 • Ribeirão Preto, SP
+    </footer>
+  </main>
+</div>
+<script>
+  const WHATSAPP_URL =
+    "https://wa.me/5516991938163?text=Quero%20reservar%20minha%20vaga%20na%20La%20Notte%20Napoletana%20da%20Confraria%20Palucci%20no%20dia%2028%2F11%2F2025";
+  // Contagem regressiva
+  (function(){
+    const el = document.getElementById("countdown");
+    const eventDate = new Date("2025-11-28T20:00:00");
+    function updateCountdown() {
+      const now = new Date();
+      const diff = eventDate - now;
+      if(diff <= 0){
+        el.textContent = "É hoje! Nos vemos daqui a pouco! 🍕";
+        return;
+      }
+      const d = Math.floor(diff/86400000);
+      const h = Math.floor((diff%86400000)/3600000);
+      const m = Math.floor((diff%3600000)/60000);
+      el.textContent = `Faltam ${d} dias, ${h} horas e ${m} minutos para nossa noite`;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 60000);
+  })();
+</script>
+</body>
+</html>
